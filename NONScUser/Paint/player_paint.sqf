@@ -1,5 +1,5 @@
 private ["_txt","_vehicle","_item"];
-VehicleToPaint = cursorTarget;
+VehicleToPaint = _this select 3;
 ColourPrice = ["ItemGoldBar10oz",5];
 _item = getText(configFile >> "CfgMagazines" >> (ColourPrice select 0) >> "displayName");
 _vehicle = getText(configFile >> "cfgVehicles" >> (typeOf VehicleToPaint) >> "displayName");
