@@ -1,5 +1,5 @@
 private ["_txt","_coins","_vehicle"];
-VehicleToPaint = cursorTarget;
+VehicleToPaint = _this select 3;
 ColourPrice = 7500;
 _coins = 'YOURPATH\dollars.paa'; //<- Change the path here to your Coin display image!
 _vehicle = getText(configFile >> "cfgVehicles" >> (typeOf VehicleToPaint) >> "displayName");
